@@ -1,0 +1,15 @@
+C:\Users\yahia\source\repos\EcoHWMonitor\EcoHWMonitor\bin\Debug\EcoHWMonitor.exe.config
+C:\Users\yahia\source\repos\EcoHWMonitor\EcoHWMonitor\bin\Debug\EcoHWMonitor.exe
+C:\Users\yahia\source\repos\EcoHWMonitor\EcoHWMonitor\bin\Debug\EcoHWMonitor.pdb
+C:\Users\yahia\source\repos\EcoHWMonitor\EcoHWMonitor\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\yahia\source\repos\EcoHWMonitor\EcoHWMonitor\obj\Debug\EcoHWMonitor.csproj.CoreCompileInputs.cache
+C:\Users\yahia\source\repos\EcoHWMonitor\EcoHWMonitor\obj\Debug\EcoHWMonitor.csproj.CopyComplete
+C:\Users\yahia\source\repos\EcoHWMonitor\EcoHWMonitor\obj\Debug\EcoHWMonitor.exe
+C:\Users\yahia\source\repos\EcoHWMonitor\EcoHWMonitor\obj\Debug\EcoHWMonitor.pdb
+C:\Users\yahia\Documents\GitHub\EcoBenchmark-app\data\EcoHWMonitor\bin\Debug\EcoHWMonitor.exe.config
+C:\Users\yahia\Documents\GitHub\EcoBenchmark-app\data\EcoHWMonitor\bin\Debug\EcoHWMonitor.exe
+C:\Users\yahia\Documents\GitHub\EcoBenchmark-app\data\EcoHWMonitor\bin\Debug\EcoHWMonitor.pdb
+C:\Users\yahia\Documents\GitHub\EcoBenchmark-app\data\EcoHWMonitor\obj\Debug\EcoHWMonitor.csproj.CoreCompileInputs.cache
+C:\Users\yahia\Documents\GitHub\EcoBenchmark-app\data\EcoHWMonitor\obj\Debug\EcoHWMonitor.csproj.CopyComplete
+C:\Users\yahia\Documents\GitHub\EcoBenchmark-app\data\EcoHWMonitor\obj\Debug\EcoHWMonitor.exe
+C:\Users\yahia\Documents\GitHub\EcoBenchmark-app\data\EcoHWMonitor\obj\Debug\EcoHWMonitor.pdb
