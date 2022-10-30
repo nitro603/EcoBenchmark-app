@@ -2,6 +2,7 @@ import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit, QPushButton, QTextEdit, QVBoxLayout
 from PyQt6.QtGui import QIcon
 from random import randrange
+from monitor import getData
 
 class MyApp(QWidget):
     def __init__(self) -> None:
@@ -21,7 +22,9 @@ class MyApp(QWidget):
         layout.addWidget(self.output)
     
     def calculateEcoScore(self):
-        outputText = 'Computer Score is ' + str(randrange((100)))
+        current = getData()
+        outputText = current.getCPUTemp()
+        #outputText = 'Computer Score is ' + str(randrange((100)))
         self.output.setText(outputText)
 
 #only used when you run the application from a command prompt
