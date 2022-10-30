@@ -15,17 +15,26 @@ class MyApp(QWidget):
         self.setLayout(layout)
         
         #widgets
-        button = QPushButton('&Begin Eco-analysis', clicked=self.calculateEcoScore)
+        ecoButton = QPushButton('&Begin Eco-analysis', clicked=self.displayScore)
         self.output = QTextEdit()
         
-        layout.addWidget(button)
+        layout.addWidget(ecoButton)
         layout.addWidget(self.output)
+        
+        sendButton = QPushButton('&SendData', clicked=self.displayScore)
+        layout.addWidget(sendButton)
     
-    def calculateEcoScore(self):
+    def displayScore(self):
         current = getData()
-        outputText = current.getCPUTemp()
-        #outputText = 'Computer Score is ' + str(randrange((100)))
+        outputText = current.getEcoScore()
+    
         self.output.setText(outputText)
+        
+    #def sendScore(self):
+        
+        #userJSON = json.dumps
+        
+        
 
 #only used when you run the application from a command prompt
 #later you'll have to change this
@@ -39,7 +48,7 @@ app.setStyleSheet('''
         font-size: 20px
     }
                   
-                  ''')
+    ''')
 
 window = MyApp()
 window.show()
