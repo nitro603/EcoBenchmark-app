@@ -1,8 +1,12 @@
-import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit, QPushButton, QTextEdit, QVBoxLayout
 from PyQt6.QtGui import QIcon
 from random import randrange
 from monitor import getData
+import sys
+import json
+import threading
+import user
+
 
 class MyApp(QWidget):
     def __init__(self) -> None:
@@ -21,7 +25,7 @@ class MyApp(QWidget):
         layout.addWidget(ecoButton)
         layout.addWidget(self.output)
         
-        sendButton = QPushButton('&SendData', clicked=self.displayScore)
+        sendButton = QPushButton('&SendData', clicked=self.sendScore)
         layout.addWidget(sendButton)
     
     def displayScore(self):
@@ -30,9 +34,13 @@ class MyApp(QWidget):
     
         self.output.setText(outputText)
         
-    #def sendScore(self):
-        
-        #userJSON = json.dumps
+    def sendScore(self):
+        #threading.Timer(20.0, getData).start()
+        #thread timer 5 minutes, generate json from current state object, :)))
+        current = getData()
+        userData = user.user("Cristian", current.getEcoScore())
+        userJSON = json.dumps(userData.__dict__)
+        print(userJSON)
         
         
 

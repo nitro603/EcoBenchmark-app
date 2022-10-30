@@ -37,5 +37,5 @@ class currentState:
     def getEcoScore(self):
         cpuScore = self.cpuTempScore(self.cpuTemp) + self.cpuUsageScore(self.cpuUsage) + self.cpuPowerDrawScore(self.cpuPowerDraw)
         gpuScore = self.gpuTempScore(self.gpuTemp) + self.gpuUsageScore(self.gpuUsage) + self.gpuPowerDrawScore(self.gpuPowerDraw)
-
+        
         return str(math.floor(cpuScore + gpuScore))

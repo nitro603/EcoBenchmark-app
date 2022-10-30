@@ -13,7 +13,6 @@ gpuPowerDraw = 0;
 def getData():
     abspath = os.path.abspath(os.getcwd())
 
-    threading.Timer(20.0, getData).start()
     cmdLine = os.path.join(abspath, r"data\EcoHWMonitor\bin\Debug\EcoHWMonitor.exe")
     print(cmdLine);
     process = subprocess.Popen("\""+ r"D:\Desktop- SSD\COMP SCI\EXP Boost\Github\EcoBenchmark\EcoBenchmark\EcoBenchmark-app\data\EcoHWMonitor\bin\Debug\EcoHWMonitor.exe" + "\"", shell=True)
