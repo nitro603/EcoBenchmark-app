@@ -1,14 +1,14 @@
 from PyQt6.QtWidgets import QApplication, QWidget, QLineEdit, QPushButton, QTextEdit, QVBoxLayout
+from threading import Timer
 from PyQt6.QtGui import QIcon
-from random import randrange
 from monitor import getData
 import sys
 import json
-import threading
 import user
 
 
 class MyApp(QWidget):
+    
     def __init__(self) -> None:
         super().__init__()
         self.setWindowTitle('EcoBenchmark')
@@ -27,20 +27,32 @@ class MyApp(QWidget):
         
         sendButton = QPushButton('&SendData', clicked=self.sendScore)
         layout.addWidget(sendButton)
-    
-    def displayScore(self):
-        current = getData()
-        outputText = current.getEcoScore()
-    
-        self.output.setText(outputText)
         
-    def sendScore(self):
-        #threading.Timer(20.0, getData).start()
-        #thread timer 5 minutes, generate json from current state object, :)))
-        current = getData()
-        userData = user.user("Cristian", current.getEcoScore())
+        
+    
+    def createState(self):
+        self.current = getData()
+        userData = user.user("Cristian", self.current.getEcoScore())
         userJSON = json.dumps(userData.__dict__)
         print(userJSON)
+        
+    
+    def displayScore(self):
+        self.createState()
+        outputText = self.current.getEcoScore()
+        self.output.setText(outputText)
+    
+    def sendScore(self):
+        #Timer(5.0, self.sendScore).start()
+        self.createState()
+        #thread timer 5 minutes, generate json from current state object,
+        current = getData()
+        userData = user.user("Cristian", self.current.getEcoScore())
+        userJSON = json.dumps(userData.__dict__)
+        
+        print(userJSON)
+        #uncomment the above code to send Json by button press and not automatically
+        
         
         
 
