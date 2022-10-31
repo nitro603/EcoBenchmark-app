@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\data",
-    "\\data\\EcoHWMonitor",
-    "\\data\\EcoHWMonitor\\bin",
-    "\\data\\EcoHWMonitor\\stats",
-    "\\window"
+    "\\db"
   ],
-  "SelectedNode": "\\data\\EcoHWMonitor\\getData.py",
+  "SelectedNode": "\\db\\connection.js",
   "PreviewInSolutionExplorer": false
 }
