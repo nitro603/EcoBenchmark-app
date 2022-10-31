@@ -1,6 +1,7 @@
 class user:
-    def __init__(self, name, ecoScore):
-        self.name = name
+    def __init__(self, username,password, ecoScore):
+        self.username = username
+        self.password = password
         self.ecoScore = ecoScore
     
     
